@@ -14,4 +14,4 @@ jobs:
       contents: read
     steps:
       - name: Run jsDelivr-Purge
-        uses: List-KR/jsdelivr-purge@54d0b32057c0d5e7879d37b6cfc0446fbc4aba82
+        uses: List-KR/jsdelivr-purge@6ab3428bc81525f40e8416347e8ba969fbd2e616
