@@ -1,0 +1,17 @@
+name: Purge jsDelivr cache
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  jsdelivrpurge:
+    name: Purge jsDelivr cache
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+    steps:
+      - name: Run jsDelivr-Purge
+        uses: List-KR/jsdelivr-purge@628ca8ae45a839358d841040bb1cfbd38e6697df
